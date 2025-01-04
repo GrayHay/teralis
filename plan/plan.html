@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="TERALIS_LOGO_160px.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teralis - Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body class="crt">
+    <h1>Teralis Analytics</h1>
+    <a
+      href="http://194.153.216.153:25567/server/8ca26e88-0069-40c3-982e-6a55ad215d51/overview"
+      >Click Here for PLAN</a
+    >
+    <br />
+    <p>
+      Please note that these analytics are public and contain no personal
+      information. These are used for internal management purposes.
+    </p>
+    <br />
+    <a href="/index.html">Back to HOME</a>
+    <style>
+      body {
+        background-color: #001a00;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+      h1 {
+        font-size: 4rem;
+        color: #00ff33;
+      }
+
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #00ff33;
+        padding: 30px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #00ff33;
+        background-color: #054b0569;
+        border-radius: 5px;
+      }
+      p {
+        font-size: 1rem;
+        max-width: 50%;
+        color: #00ff33;
+        @media (max-width: 790px) {
+          max-width: 100%;
+        }
+      }
+
+      body.crt {
+        background-color: #001a00;
+        color: #00ff33;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        text-shadow: 0 0 2px #00ff33, 0 0 4px #00ff33, 0 0 8px #00ff33;
+        position: relative;
+      }
+
+      body.crt::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0.05) 2px
+        );
+        pointer-events: none; /* Allow interaction with links */
+        z-index: 1;
+        mix-blend-mode: overlay;
+      }
+
+      body.crt::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle,
+          rgba(0, 255, 51, 0.1),
+          transparent 60%
+        );
+        pointer-events: none; /* Allow interaction with links */
+        z-index: 0;
+      }
+    </style>
+  </body>
+</html>
